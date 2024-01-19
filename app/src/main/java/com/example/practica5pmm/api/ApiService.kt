@@ -5,9 +5,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ApiService {
-    interface ApiService {
-        @GET("razas/{raza}/imagenes")
-        suspend fun obtenerImagenesRaza(@Path("raza") raza: String): RazasResponse
-    }
-
+    @GET("razas/{raza}/imagenes")
+    suspend fun obtenerImagenesRaza(@Path("raza") raza: String): RazasResponse
 }

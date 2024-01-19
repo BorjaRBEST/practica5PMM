@@ -30,7 +30,7 @@ class RazasImagenesActivity : AppCompatActivity() {
     private fun cargarImagenes(raza: String) {
         GlobalScope.launch(Dispatchers.IO) {
             try {
-                val respuesta = apiService.getBreedImages(raza)
+                val respuesta = apiService.obtenerImagenesRaza(raza) // Corregir esta línea
                 val imagenes = respuesta.imagenes.take(5) // Obtener hasta 5 imágenes
 
                 runOnUiThread {
@@ -42,4 +42,5 @@ class RazasImagenesActivity : AppCompatActivity() {
             }
         }
     }
+
 }
