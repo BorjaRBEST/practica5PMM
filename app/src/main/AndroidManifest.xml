@@ -23,10 +23,11 @@
         </activity>
 
         <activity
-            android:name=".RazasImagenesActivity"
-            android:exported="true">
-            <!-- Puedes agregar configuraciones adicionales aquí -->
+            android:name="com.example.practica5pmm.RazasImagenesActivity"
+            android:label="Nombre de la actividad (opcional)">
         </activity>
+
+
     </application>
 
 </manifest>
